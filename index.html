@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>طبيبي الذكي | مساعد تقييم الأعراض</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              tajawal: ['Tajawal', 'sans-serif'],
+            },
+          },
+        },
+        plugins: [],
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+      body {
+        font-family: 'Tajawal', sans-serif;
+        background-color: #f8fafc;
+      }
+      .chat-scroll::-webkit-scrollbar {
+        width: 6px;
+      }
+      .chat-scroll::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .chat-scroll::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 10px;
+      }
+      
+      /* Simple implementation of tailwindcss-animate utility classes if plugin not loaded */
+      .animate-in {
+        animation-duration: 500ms;
+        animation-fill-mode: both;
+      }
+      .fade-in {
+        animation-name: fadeIn;
+      }
+      .slide-in-from-right-4 {
+        animation-name: slideInRight;
+      }
+      .slide-in-from-left-4 {
+        animation-name: slideInLeft;
+      }
+      .slide-in-from-bottom-4 {
+        animation-name: slideInBottom;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes slideInRight {
+        from { transform: translateX(1rem); }
+        to { transform: translateX(0); }
+      }
+      @keyframes slideInLeft {
+        from { transform: translateX(-1rem); }
+        to { transform: translateX(0); }
+      }
+      @keyframes slideInBottom {
+        from { transform: translateY(1rem); }
+        to { transform: translateY(0); }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+<link rel="shortcut icon" href="/medicine.png" type="image/png">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
