@@ -146,9 +146,9 @@ const App: React.FC = () => {
           نحن هنا لخدمتك • مدعوم بتقنيات الذكاء الاصطناعي المتقدمة
         </p> 
         <a href="https://yasuruha.netlify.app/" target="_blank" rel="noopener noreferrer">
-<p className="text-xs md:text-sm text-gray-500 text-center mt-4 px-4 py-2 rounded-2xl bg-gradient-to-r from-blue-50 to-emerald-50 font-tajawal shadow-sm">
+<p className="flex justify-center gap-1 item-center flex-row text-xs md:text-sm text-gray-500 text-center mt-4 px-4 py-2 rounded-2xl bg-gradient-to-r from-blue-50 to-emerald-50 font-tajawal shadow-sm">
   صُمِّم وطُوِّر بكل  
-  <span className="mx-1 animate-pulse">💚</span>
+  <span className="animate-pulse">💚</span>
   بواسطة  
   <span className="text-emerald-500 font-semibold"> يسِّرها</span>
 </p>
